@@ -17,71 +17,112 @@
 <body class="main-bg-3">
 
     <div class="row index-container ">
+        <!--*************************************************************************************-->
+        <!-- Colum of 2 card -->
         <div class="col-md-6 group-box ">
+            <!--*************************************************************************************-->
+            <!-- CARD 1 HERE THE of Temperature CARD-->
             <div class="row justify-content-end d-flex align-items-center ">
                 <div class="small-box ">
                     <div class="col-md-1 ">
                         <div class="left-line1"></div>
                     </div>
                     <img src="src/img/temperature.png" alt="">
-                    <h3>25 c</h3> <!-- REAL TIME VALIE HERE -->
+                    <h3>25 c</h3> <!-- REAL TIME VALUE HERE form fire firebase -->
                     <h6>Temperature</h6>
                 </div>
             </div>
+            <!-- the END of CARD 1 HERE THE of Temperature CARD -->
+            <!--*************************************************************************************-->
+
+            <!--*************************************************************************************-->
+            <!-- CARD 2 HERE THE D.O. [DissolvedOxygen] CARD -->
             <div class="row justify-content-end d-flex align-items-center ">
                 <div class="small-box ">
                     <div class="col-md-1 ">
                         <div class="left-line2"></div>
                     </div>
                     <img src="src/img/oxygen.png" alt="">
-                    <h4>6 mg/L</h4> <!-- REAL TIME VALIE HERE -->
+                    <h4>6 mg/L</h4> <!-- REAL TIME VALUE HERE from firebase -->
                     
                     <p>DissolvedOxygen</p>
                 </div>
             </div>
+            <!-- the END of CARD 2 HERE THE D.O. [DissolvedOxygen] CARD -->
+            <!--*************************************************************************************-->
+        </div><!-- the ending colum-->
+        <!--*************************************************************************************-->
 
-        </div>
+        <!--*************************************************************************************-->
+        <!-- Colum of the Graph -->
         <div class="col-md-6  justify-content-start d-flex align-items-center">
             <div class="graph-box">
                 graph
             </div>
-        </div>
+        </div><!-- the ending colum-->
+        <!--*************************************************************************************-->
         
     </div>
+
+    <!-- row of header -text SMART FISH POND  (include the button toggle popup)-->
     <div class="row index-header ">
+
         <div class="col-md-12 ">
             <H5>Smart Fish Pond</H5>
             <p>delevop by ?</p>
         </div>
+
+        <!-- Buttom for toggle popup login form here  -->
         <button onclick="document.getElementById('modal-wrapper').style.display='block'" type="button"  class="btn btn-info">
             <i class="fas fa-align-left"></i><span>&nbsp; Admin Login</span>
         </button>
+        <!-- the end of button toggle popip login form-->
 
-        
     </div>
+    <!-- the END of row of header -text SMART FISH POND  (include the button toggle popup)-->
+
+
+
+    <!--  the popup login form -->
     <div id="modal-wrapper" class="modal">
+        <!--*************************************************************************************-->
+        <!-- 
+            HEADER of Form login here 
+        -->
         <form class="modal-content animate" action="DashBoard.html">     
             <div class="imgcontainer">
                 <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
                 <img src="src/img/user.png" alt="Avatar" class="avatar">
                 <h1 style="text-align:center">Admin Login</h1>
                 </div>
-            
-                <div class="container">
-                  <input type="text" placeholder="Enter Username" name="uname">
-                  <input type="password" placeholder="Enter Password" name="psw">        
-                  <button type="submit"class="btn btn-info" style="margin-top:10px; margin-left: 40%;" ><i class="fas fa-align-left"></i><span>&nbsp; Admin Login</span></button>  
-                  <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
-                </div>
                 
-        </form>
-              
+                <!---------------------------------------------------------------------------------------------------------->
+                <!-- Main login form the input part-->
+                <div class="container">
+                    
+                    <!-- input username here -->
+                    <input type="text" placeholder="Enter Username" name="uname">
+                    <!-- inpit password here -->
+                    <input type="password" placeholder="Enter Password" name="psw">
+
+                    <button type="submit"class="btn btn-info" style="margin-top:10px; margin-left: 40%;" ><i class="fas fa-align-left"></i><span>&nbsp; Admin Login</span></button>  
+                    
+                    <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+                
+                </div>
+                <!--End of the input part-->
+                <!---------------------------------------------------------------------------------------------------------->
+                
+        </form><!-- Ending of form login-->
+        <!--*************************************************************************************-->      
     </div>
+    <!-- the end of pop up form-->
 
 
 
 
 <script>
+    // this is the script for for popup login 
     var modal = document.getElementById('modal-wrapper');
     window.onclick = function(event) {
         if (event.target == modal) {
