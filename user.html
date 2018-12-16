@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>DashBoard</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="src/css/bootstrap.css">
+        <link rel="stylesheet" href="src/css/user.css">
+        
+    </head>
+
+    <body class="main-bg-3" >
+        <!-- This is the Sidebar of Dashboard -->
+        <div class="sidebar">
+            <div class="logo-pic">
+                <a class=""><img class="user-img"src="src/img/plixi-logo.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="DashBoard.html" class="fas fa-th-large"></a></li>
+                <li><a href="" class="far fa-calendar-alt"></a></li>
+                <li><a href="" class="fas fa-user"></a></li>
+                <li><a href="index.html" class="fas fa-sign-out-alt"></a></li>
+            </ul>
+        </div>
+        <!-- END of SideBar -->
+
+        <!-- This is the Header of DashBoard -->
+        <div class="row main-bg-3 ">
+            <div class="the-head-content ">
+
+                <!-- HEADER ROW 1 -->
+                <div class="row the-head-1">
+                    <!-- BREAD HERE-->
+                    <div class="col-md-4">
+                        <div class="the-header-text">
+                           <h3>DashBoard  &nbsp; | &nbsp;  Fish Pond</h3>
+                        </div>
+                    </div>
+                    <!-- CLOCK HERE -->
+                    <div class="col-md-4 ">
+                        <div class="clock-box">
+                            <h5 id="clock"></h5>
+                        </div>
+
+                    </div>
+
+
+                    <!-- JUSt a Spacing here-->
+                    <div class="col-md-4 "></div>
+
+                </div>
+
+                <!-- HEADER ROW 2 -->
+                <div class="row the-head-2 ">
+                    <div class="col-md-3 the-header-nav">
+                        <ul>
+                            <li><a href="DashBoard.html"> Overview</a></li>
+                            <li><a href="setting.html"> Setting</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END of HEADER -->
+
+        <!--********* The Main Content Start Here ********** -->
+        <!--
+            ROW OF 3 CARDs
+        -->
+        <div class="row the-content">
+            <div class="setting-container">
+                <div class="box">
+                    <div class="row">
+                        <!-- mini line here -->
+                        <div class="col-md-1 box-1 ">
+                            <div class="left-line"></div>
+                        </div>
+                        <!-- logo here -->
+                        <div class="col-md-2 box-2 ">
+                            <img src="src/img/user.png" alt="">
+                        </div>
+                        <!--Input form here -->
+                        <div class="col-md-9 ">
+                            <div class="box-9">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="btn1"> Option 1 </button>
+        <button id="btn2"> Option 2 </button>
+        <div class="row the-content">
+            
+            <div class="chart-canvas-confic " style="width:50%; height:500px;">
+                <canvas id="lineChart" width="700" height="500"></canvas>
+            </div>
+            
+            Chart
+        </div>
+     
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="src/js/Graph.js"></script>
+        <script src="/src/js/dashboard.js"></script>
+    </body>
+</html>
