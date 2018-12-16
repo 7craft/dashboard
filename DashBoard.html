@@ -13,6 +13,7 @@
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="src/css/bootstrap.css">
         <link rel="stylesheet" href="src/css/dashboard.css">
+        <link rel="stylesheet" href="src/js/Graph.js">
     </head>
 
     <body>
@@ -43,7 +44,7 @@
                         </div>
                     </div>
                     <!-- CLOCK HERE -->
-                    <div class="col-md-4 ">
+                    <div class="col-md-4 debug-2">
                         <div class="clock-box">
                             <h5 id="clock"></h5>
                         </div>
@@ -52,7 +53,9 @@
 
 
                     <!-- JUSt a Spacing here-->
-                    <div class="col-md-4 "></div>
+                    <div class="col-md-4 ">
+                        Hello
+                    </div>
 
                 </div>
 
@@ -120,7 +123,9 @@
                 </div>
             </div>
             <!--
+
                 CARD 3
+                
             -->
             <div class="col-md-4">
                 <div class="container">
@@ -146,12 +151,30 @@
         <!--
             GRAPH HERE FROM Chart.js
         -->
-        <div class="row the-content hilight-bg-debug">
-            GRAPH
+        <!--*************************************************************************************-->
+        <!-- Colum of the Graph -->
+        <div class="row the-content">
+            <div class="">
+                <div class="graph-box">
+                        <div class="chart-canvas-confix ">
+                                <canvas id="forecast" width="" height=""></canvas>
+                                <button id="0" type="button" >ShowBoth</button>
+                                <button id="1" type="button" >Temp</button>
+                                <button id="2" type="button">D.O.</button>
+                        </div>
+                </div>
+            </div><!-- the ending colum-->
         </div>
+        
+        <!--*************************************************************************************-->
         <!-- End of Chart.js -->
-     
-
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.js"></script>
+        <script src="src/js/lib/Chart.min.js"></script>
+        <script src="src/js/lib/chartjs-plugin-annotation.min.js"></script>
+        <script src="src/js/lib/jquery.min.js"></script>
+        <script src="src/js/Graph.js"></script>
+        <script src="/src/js/dashboard.js"></script>
         <script src="/src/js/dashboard.js"></script>
     </body>
 </html>

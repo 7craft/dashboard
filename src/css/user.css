@@ -21,6 +21,10 @@ body,html {
     background: #edeff5;
 }
 
+.main-bg-4 {
+    background: #ffffff;
+}
+
 .debug-1 {
     background-color: red;
 }
@@ -190,6 +194,16 @@ body,html {
 /*-----------------------------------------
     Row of 3 card CSS
 -------------------------------------------*/
+.chart-canvas-confix {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    
+}
 .the-content{
     background-color:#edeff5;
 }
