@@ -9,7 +9,7 @@ function DayClock() {
     var setOfDay = ["Sun","Mon","Tue","Wed","Thurs","Fri","Sat"];
 
     var day = setOfDay[time.getDay()];
-    console.log(time.getDay());
+
     var hours = time.getHours().toString();
     var minutes = time.getMinutes().toString();
     var sec = time.getSeconds().toString();
