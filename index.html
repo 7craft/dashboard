@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script> <!-- NEW UPDATE HERE CDN-->
     <link rel="stylesheet" href="src/css/bootstrap.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/js/Graph.js">
+    <link rel="stylesheet" href="src/js/test.js">
     <title>Fishpond</title>
 
 </head>
@@ -55,14 +57,14 @@
         <!--*************************************************************************************-->
 
         <!--*************************************************************************************-->
-        <!-- Colum of the Graph -->
+        <!-- Colum of the Graph --> <!-- COPY ALL THIS GARH BOX AND PASTE-->
         <div class="col-md-6  justify-content-start d-flex align-items-center">
             <div class="graph-box">
                     <div class="chart-canvas-confix ">
-                            <canvas id="forecast" width="" height=""></canvas>
-                            <button id="0" type="button" >ShowBoth</button>
-                            <button id="1" type="button" >Temp</button>
-                            <button id="2" type="button">D.O.</button>
+                            <canvas id="myChart" width="" height=""></canvas>
+                            <button id="0"  class="btn-info main-bg-2">ShowBoth</button>
+                            <button id="1" class="btn-info main-bg-5">Temp</button>
+                            <button id="2" class="btn-info main-bg-1">D.O.</button>
                     </div>
             </div>
         </div><!-- the ending colum-->
@@ -136,11 +138,12 @@
             }
     }
     </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.js"></script>
     <script src="src/js/lib/Chart.min.js"></script>
     <script src="src/js/lib/chartjs-plugin-annotation.min.js"></script>
     <script src="src/js/lib/jquery.min.js"></script>
-    <script src="src/js/Graph.js"></script>
+    <script src="src/js/GraphTest2.js"></script>
     <script src="src/js/dashboard.js"></script>
 
 

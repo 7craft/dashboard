@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script> <!-- NEW UPDATE HERE CDN-->
         <link rel="stylesheet" href="src/css/bootstrap.css">
         <link rel="stylesheet" href="src/css/dashboard.css">
         <link rel="stylesheet" href="src/js/Graph.js">
@@ -43,8 +44,8 @@
                            <h3>DashBoard  &nbsp; | &nbsp;  Fish Pond</h3>
                         </div>
                     </div>
-                    <!-- CLOCK HERE -->
-                    <div class="col-md-4 debug-2">
+                    <!-- CLOCK HERE --> <!-- CLOCK CHANGE HERE-->
+                    <div class="col-md-4 d-flex justify-content-center ">
                         <div class="clock-box">
                             <h5 id="clock"></h5>
                         </div>
@@ -53,7 +54,7 @@
 
 
                     <!-- JUSt a Spacing here-->
-                    <div class="col-md-4 ">
+                    <div class="col-md-4 d-flex justify-content-center">
                         Hello
                     </div>
 
@@ -81,7 +82,7 @@
             <!--
                 CARD 1
             -->
-            <div class="col-md-4">
+            <div class="col-md-6 ">
                 <div class="container">
                     <div class="box">
                         <ul class="list-inline">
@@ -103,7 +104,7 @@
             <!--
                 CARD 2
             -->
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="container">
                     <div class="box">
                         <ul class="list-inline">
@@ -127,37 +128,19 @@
                 CARD 3
                 
             -->
-            <div class="col-md-4">
-                <div class="container">
-                    <div class="box">
-                        <ul class="list-inline">
-                            <li>
-                                <img src="src/img/light-bulb.png" alt="">
-                            </li>
-                            
-                        </ul>
-                        <div class="sub-box ">
-                            <h1>?</h1> <!--- REAL TIME DATA GOING HERE-->
-                        </div>
-                        <hr>
-                        <div class="box-footer">
-                            <h4 >Power Supply</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
         </div>
         <!-- END of Row of 3 Cards-->
         <!--
             GRAPH HERE FROM Chart.js
         -->
         <!--*************************************************************************************-->
-        <!-- Colum of the Graph -->
-        <div class="row the-content">
+        <!-- Colum of the Graph --> <!-- COPY ALL AND PLACE TOO-->
+        <div class="row the-content d-flex justify-content-center">
             <div class="">
-                <div class="graph-box">
+                <div class="graph-box d-flex justify-content-center"" >
                         <div class="chart-canvas-confix ">
-                                <canvas id="forecast" width="" height=""></canvas>
+                                <canvas id="myChart" width="" height=""></canvas>
                                 <button id="0" type="button" >ShowBoth</button>
                                 <button id="1" type="button" >Temp</button>
                                 <button id="2" type="button">D.O.</button>
@@ -173,7 +156,7 @@
         <script src="src/js/lib/Chart.min.js"></script>
         <script src="src/js/lib/chartjs-plugin-annotation.min.js"></script>
         <script src="src/js/lib/jquery.min.js"></script>
-        <script src="src/js/Graph.js"></script>
+        <script src="src/js/GraphTest2.js"></script>
         <script src="/src/js/dashboard.js"></script>
         <script src="/src/js/dashboard.js"></script>
     </body>
